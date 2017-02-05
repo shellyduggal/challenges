@@ -3,9 +3,12 @@
 // convenience to get you started writing code faster.
 //
 
-var Year = function() {};
+var Year = function(x) {
+	input = x;
+};
 
-Year.prototype.isLeap = function(input) {
+
+Year.prototype.isLeap = function() {
   if(input % 400 === 0) {
     return true;
   } else if(input % 100 === 0) {
